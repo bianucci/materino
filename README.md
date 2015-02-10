@@ -9,7 +9,7 @@ Below you find a plan that shows what to do in the next 20 units.
 
 Unit  -   Task
 
-1     buy the wired sensor + two 2-digit displays
+~~1     buy the wired sensor + two 2-digit displays~~
 
 2   	measure temperature
 
