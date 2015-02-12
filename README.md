@@ -11,9 +11,9 @@ Unit  -   Task
 
 ~~1     buy the wired sensor + two 2-digit displays~~
 
-2   	measure temperature
+~~2   	measure temperature~~
 
-2   	control a relay triggered by temp
+~~2   	control a relay triggered by temp~~
 
 2   	connect LED indicating whether relay is turned on or off
 
