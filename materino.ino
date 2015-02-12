@@ -16,6 +16,9 @@
 
 // for testing purposes the desired water temperature is 30 degrees
 #define DESIRED_TEMP 30
+
+// led connected to pin 13
+#define LED 13
  
 // Setup a oneWire instance to communicate with any OneWire devices 
 // (not just Maxim/Dallas temperature ICs)
@@ -33,6 +36,7 @@ void setup(void)
   sensors.begin();
   pinMode(RELAY, OUTPUT);
   digitalWrite(RELAY, HIGH);   // turn off the heater 
+  pinMode(LED, OUTPUT);
 }
  
 
@@ -58,6 +62,7 @@ void loop(void)
           Serial.print("TempTooLow! Turn ON heater.\n");
 
           digitalWrite(RELAY, LOW);   // turn on the heater
+          digitalWrite(LED, HIGH);   // turn on the heater
           heating = true;
           tempLowCounter = 0;
       }
@@ -66,6 +71,7 @@ void loop(void)
       if( heating == true && tempHighCounter > 2) {
           Serial.print("TempTooHIGH! Turn OFF heater.\n");
           digitalWrite(RELAY, HIGH);   // turn off the heater
+          digitalWrite(LED, LOW);   // turn on the heater
           heating = false;
           tempHighCounter = 0;
       }
