@@ -1,3 +1,6 @@
+# Arduino project file
+*.ino
+
 # Object files
 *.o
 *.ko
