@@ -17,7 +17,9 @@ Unit  -   Task
 
 ~~2   	connect LED indicating whether relay is turned on or off~~
 
-3   	connect a display and display values from 0 to 99
+~~3.1   buy shift registers to drive 7 segment displays
+
+3.1   connect 7 segment displays and display values from 0 to 99
 
 4	    show temperature on display
 
